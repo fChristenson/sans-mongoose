@@ -1,4 +1,4 @@
-# TypeScript demo
+# How do we work in Node without Mongoose?
 
 ## What we will cover
 
