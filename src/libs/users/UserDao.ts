@@ -3,6 +3,8 @@ import { db } from "../db/db";
 
 const collectionName = "users";
 
+// Think of a Dao as the interface between your logic and the database
+// In Mongoose terms a Dao is a Model. It is what will store and fetch our data.
 export interface IUserDao {
   saveUser(user: IUser): Promise<void>;
   getUser(id: string): Promise<IUser>;
