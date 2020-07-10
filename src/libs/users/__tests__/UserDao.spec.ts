@@ -22,7 +22,7 @@ describe("UserDao", () => {
     it("should save a user", async () => {
       const userToSave = User("foo", "foo@bar.se");
       const dao = new UserDao();
-      dao.saveUser(userToSave);
+      await dao.saveUser(userToSave);
       const user = await dao.getUser(userToSave.id);
       expect(user.id).toEqual(userToSave.id);
     });
