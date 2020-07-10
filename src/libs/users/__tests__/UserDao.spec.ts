@@ -16,7 +16,7 @@ describe("UserDao", () => {
   /**
    * We need to connect to a real database to test that our Dao is working.
    * We want to keep these test to a minimum since they take longer than
-   * if we run out test in memory.
+   * if we run our test in memory.
    */
   describe("UserDao.saveUser", () => {
     it("should save a user", async () => {
